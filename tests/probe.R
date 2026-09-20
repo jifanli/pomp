@@ -19,7 +19,7 @@ plist <- list(
 
 probe(po,probes=plist,nsim=500,seed=595969) -> pb
 plot(pb,y=NULL)
-pb |> as.data.frame() |> head(3) |> knitr::kable()
+pb |> as.data.frame() |> head(3)
 summary(pb)
 
 try(probe())
